@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "ICICI_DEV.${artifactId}.service.api.transport.v1";
+option java_outer_classname = "Transportable";
+option optimize_for = SPEED;
+
+message FloatDatum {
+    float value = 1;
+}
+
+message IntDatum {
+    int32 value = 1;
+}
+
+message ServiceException {
+    string message = 1;
+}
+
+message StringDatum {
+    string value = 1;
+}
